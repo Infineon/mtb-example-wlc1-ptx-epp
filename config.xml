@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://cypress.com/xsd/wlcwirelessconfiguration">
+  <device_info
+    family="WLC1"
+    part_number="WLC1115-68LQXQ"
+    device_type="WIRELESS CHARGING TRANSMITTER" />
+  <table_info
+    table_type="1"
+    application="18"
+    major_version="6"
+    minor_version="0"
+    patch_version="0" />
+  <wireless_config
+    index="0">
+    <qi_main_config>
+      <profile
+        ptmc="0x0067"
+        wpc_version="0x13"
+        console_verbosity="0x1B" />
+      <coils
+        number_of_coils="1" />
+      <mode
+        epp_enable="1"
+        ppp_enable="0"
+        samsung_ppde_enable="1"
+        external_clock_enable="0" />
+      <packet_timeout
+        ask_packet_timeout="2000"
+        cep_packet_timeout="1700"
+        rpp_packet_timeout="23000" />
+      <ept_timer
+        ept_unknown_ping_retry_count="0"
+        ept_charge_complete_retry_count="255"
+        ept_internal_fault_retry_count="0"
+        ept_otp_retry_count="0"
+        ept_ovp_retry_count="3"
+        ept_ocp_retry_count="3"
+        ept_bat_fail_retry_count="0" />
+    </qi_main_config>
+    <qi_coil_config
+      index="0">
+      <operation
+        operating_mode="0"
+        pwm_freq_min="11000"
+        pwm_freq_max="14800"
+        pwm_duty_min="200"
+        vbridge_analog_ping="3000"
+        vbridge_bpp_max="15000"
+        vbridge_epp_max="20000"
+        vbridge_ppp_max="20000"
+        epp_potential_power="30"
+        ppp_potential_power="0"
+        guranteed_power="30" />
+      <analog_ping
+        analog_ping_interval="100"
+        analog_ping_interval_in_error="0"
+        analog_ping_freq="8800"
+        analog_ping_duty_cycles="500"
+        analog_ping_min_count="3" />
+      <digital_ping
+        digital_ping_voltage="5000"
+        digital_ping_freq="12770"
+        digital_ping_duty="500"
+        digital_ping_interval="2000"
+        digital_ping_interval_in_error="0" />
+      <ask_demod
+        ask_demod_volt_high_gain="7"
+        ask_demod_volt_low_gain="4"
+        ask_demod_cur_gain="0"
+        ask_demod_sequence="0" />
+      <pid
+        pid_kp="50"
+        pid_ki="2"
+        pid_kd="0"
+        pid_sv_mv_type="1"
+        pid_sv_mv_scale="1"
+        pid_mi="3000"
+        pid_mpid="20000"
+        pid_bpp_low_load_threshold="25"
+        pid_epp_low_load_threshold="50"
+        pid_low_load_Kp="200" />
+      <buck_boost
+        external_vbridge_regulator="0" />
+      <regulation_config
+        fb_type="0"
+        vbus_min_volt="0"
+        vbus_max_volt="0"
+        vbus_dflt_volt="0"
+        cable_resistance="0"
+        vbus_offset_volt="0"
+        current_sense_res="100"
+        src_gate_drv_str="2"
+        vbtr_up_step_width="80"
+        vbtr_down_step_width="80"
+        prim_sec_turns_ratio="0"
+        sr_enable="0"
+        sr_rise_time="0"
+        sr_fall_time="0"
+        sr_async_thresh="0"
+        sr_supply_doubler="0"
+        buck_boost_operating_mode="1"
+        pwm_mode="4"
+        pwm_min_freq="80"
+        pwm_max_freq="80"
+        pwm_fix_freq="80"
+        max_pwm_duty_cycle="0"
+        min_pwm_duty_cycle="0"
+        pwm_gate_pull_up_drv_strnth_LS1="7"
+        pwm_gate_pull_up_drv_strnth_LS2="7"
+        pwm_gate_pull_up_drv_strnth_HS1="7"
+        pwm_gate_pull_up_drv_strnth_HS2="7"
+        pwm_dithering_type="3"
+        pwm_dithering_freq_range="15"
+        power_inductor_value="68"
+        peak_current_sense_resistor="50"
+        phase_angle_control="0"
+        peak_current_limit="60"
+        max_pwm_duty_cycle_high_line="0"
+        vbtr_up_step_width_below_5v="20"
+        vbtr_down_step_width_below_5v="20"
+        pwm_max_freq_ex="0"
+        pwm_gate_pull_down_drv_strnth_LS1="7"
+        pwm_gate_pull_down_drv_strnth_LS2="7"
+        pwm_gate_pull_down_drv_strnth_HS1="7"
+        pwm_gate_pull_down_drv_strnth_HS2="7"
+        bbclk_freq="48"
+        pwm_fix_freq_dith="0x4E"
+        pwm_dith_spread_cycles="0x12" />
+      <inverter_config
+        fb_type="0"
+        vbus_min_volt="0"
+        vbus_max_volt="0"
+        vbus_dflt_volt="0"
+        cable_resistance="0"
+        vbus_offset_volt="0"
+        current_sense_res="0"
+        src_gate_drv_str="0"
+        vbtr_up_step_width="0"
+        prim_sec_turns_ratio="0"
+        sr_enable="0"
+        sr_rise_time="0"
+        sr_fall_time="0"
+        sr_async_thresh="0"
+        sr_supply_doubler="0"
+        buck_boost_operating_mode="0"
+        pwm_mode="0"
+        pwm_min_freq="0"
+        pwm_max_freq="0"
+        pwm_fix_freq="0"
+        max_pwm_duty_cycle="0"
+        min_pwm_duty_cycle="0"
+        pwm_gate_pull_up_drv_strnth_LS1="7"
+        pwm_gate_pull_up_drv_strnth_LS2="7"
+        pwm_gate_pull_up_drv_strnth_HS1="7"
+        pwm_gate_pull_up_drv_strnth_HS2="7"
+        pwm_dithering_type="0"
+        pwm_dithering_freq_range="0"
+        power_inductor_value="0"
+        peak_current_sense_resistor="0"
+        phase_angle_control="0"
+        peak_current_limit="0"
+        max_pwm_duty_cycle_high_line="0"
+        vbtr_up_step_width_below_5v="0"
+        vbtr_down_step_width_below_5v="0"
+        pwm_max_freq_ex="0"
+        pwm_gate_pull_down_drv_strnth_LS1="4"
+        pwm_gate_pull_down_drv_strnth_LS2="4"
+        pwm_gate_pull_down_drv_strnth_HS1="4"
+        pwm_gate_pull_down_drv_strnth_HS2="4"
+        bbclk_freq="0"
+        pwm_fix_freq_dith="0x00"
+        pwm_dith_spread_cycles="0x00" />
+      <qi_fod_config>
+        <q_factor_fod
+          q_free_air_fod_enable="1"
+          q_free_air="70"
+          q_tolerance="5"
+          q_free_air_fod_threshold_per="30"
+          q_digital_ping_retry_count="2"
+          q_high_scale_factor="40"
+          q_low_scale_factor="75" />
+        <resonant_freq
+          res_freq_threshold_per="67"
+          res_freq_scale_factor="856" />
+        <power_loss_fod
+          ploss_fod_enable="1"
+          fod_coeff_a_bpp="0.000003"
+          fod_coeff_b_bpp="0.9743"
+          fod_coeff_c_bpp="141.48"
+          fod_threshold_bpp="325"
+          fod_threshold_bpp_max="1000"
+          fod_assert_bpp_count="3"
+          fod_discon_pow_bpp_count="3"
+          calib_offset_bpp="35"
+          fod_coeff_a_5w_epp="0.000002"
+          fod_coeff_b_5w_epp="0.9771"
+          fod_coeff_c_5w_epp="325.95"
+          fod_threshold_5w_epp="325"
+          fod_threshold_5w_epp_max="1000"
+          fod_assert_5w_epp_count="3"
+          fod_discon_pow_5w_epp_count="1"
+          calib_offset_5w_epp="335"
+          fod_coeff_a_15w_epp="0.000003"
+          fod_coeff_b_15w_epp="0.9625"
+          fod_coeff_c_15w_epp="410.14"
+          fod_threshold_15w_epp="750"
+          fod_threshold_15w_epp_max="2000"
+          fod_assert_15w_epp_count="3"
+          fod_discon_pow_15w_epp_count="1"
+          calib_offset_15w_epp="705"
+          fod_threshold_ppde="750"
+          fod_threshold_ppde_max="2000" />
+      </qi_fod_config>
+    </qi_coil_config>
+    <vin_config
+      pd_power_optimization_enable="1" />
+    <fault_protection_config>
+      <protection
+        ocp_threshold="4000"
+        ocp_debounce="10"
+        ocp_retry="0"
+        power_limit_max="200"
+        ovp_threshold="20500"
+        ovp_debounce="10"
+        ovp_retry="0"
+        sys_otp_trigger_theshold="125"
+        sys_otp_release_threshold="105"
+        coil_otp_trigger_theshold="70"
+        coil_otp_release_threshold="60" />
+    </fault_protection_config>
+  </wireless_config>
+  <port
+    index="0">
+    <pd_config
+      signature="0x50445343"
+      version="0x0100"
+      manufacturer_info="[0xB4, 0x04, 0x01, 0xFA, 0x49, 0x6E, 0x66, 0x69, 0x6E, 0x65, 0x6F, 0x6E, 0x00]"
+      source_cap_extended=""
+      sink_cap_extended="[0xB4, 0x04, 0x01, 0xFA, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x12, 0x12, 0x1E, 0x00, 0x00, 0x00]"
+      port_role="0"
+      dflt_port_role="0"
+      current_level="2"
+      cable_disc_count="0x14"
+      src_pdo_flags="0x0000"
+      snk_pdo_flags="0x0000"
+      rp_rd_toggle="0"
+      rp_supported="0x07"
+      pd_operation_en="1"
+      preferred_pwr_role="0"
+      port_disable="0"
+      cable_disc_en="0"
+      dead_bat_en="0"
+      err_recov_en="1"
+      accessory_en="0"
+      rp_detach_en="0"
+      vconn_retain="0"
+      frs_config="0"
+      default_src_pdo_mask="0x00"
+      default_sink_pdo_mask="0x0F"
+      src_pdo="[]"
+      sink_pdo="[0x0001912C, 0x0002D0C8, 0x0004B0C8, 0x00064096]"
+      sink_min_max_current="[0x012C, 0x00C8, 0x00C8, 0x000A]"
+      pd_revision="0x31100000"
+      source_info="0x003C3C3C"
+      epr_src_pdo_mask="0x00"
+      epr_sink_pdo_mask="0x00"
+      epr_src_pdo="[]"
+      epr_sink_pdo="[]" />
+    <app_config
+      pref_data_role="1"
+      pref_power_role="1"
+      port_func="0"
+      flashing_vid="0x04B4"
+      flashing_mode="0"
+      snk_usb_susp_en="0"
+      snk_usb_comm_en="0"
+      swap_response="0x3F" />
+    <base_alt_mode_config
+      dfp_alt_mode_mask="0x00"
+      ufp_alt_mode_mask="0x00"
+      discover_id_response="[[0xFF00A041, 0x184004B4, 0x00000000, 0xFA010000]]"
+      discover_svid_response="[]"
+      discover_mode_response="[]" />
+    <dp_config
+      dp_config_supported="0x00"
+      dp_mux_control="0"
+      dp_mode_trigger="0"
+      dp_oper="0"
+      dp_pref_mode="0" />
+    <power_protection>
+      <vbus_ovp
+        enable="1"
+        mode="2"
+        threshold="20"
+        debounce="10"
+        retry_cnt="2" />
+    </power_protection>
+  </port>
+</config_table>

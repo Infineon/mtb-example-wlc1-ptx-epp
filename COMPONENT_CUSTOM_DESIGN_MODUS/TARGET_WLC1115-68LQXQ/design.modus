@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design version="12" device_library_hint_path="../../../../Modus/mtb_shared/mtb-pdl-cat2/c98de99c/devicesupport.xml" xmlns="http://cypress.com/xsd/cydesignfile_v3">
+    <ToolInfo version="2.4.0.6014"/>
+    <Devices>
+        <Device mpn="WLC1115-68LQXQ">
+            <BlockConfig>
+                <Block location="ioss[0].port[0].pin[0]">
+                    <Alias value="ASK_OUT"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="0"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[0].pin[1]">
+                    <Alias value="BMC_RX_SPI_MISO"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_HIGHZ"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[0].pin[2]">
+                    <Alias value="INV_BUCK"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
+                        <Param id="initialState" value="0"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[0].pin[3]">
+                    <Alias value="INV_BOOST"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
+                        <Param id="initialState" value="0"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[0].pin[4]">
+                    <Alias value="PWM_OUT"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
+                        <Param id="initialState" value="0"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[1].pin[2]">
+                    <Alias value="LED_BLUE"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
+                        <Param id="initialState" value="0"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[1].pin[3]">
+                    <Alias value="LED_RED"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
+                        <Param id="initialState" value="0"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[1].pin[4]">
+                    <Alias value="UART_TX"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[1].pin[6]">
+                    <Alias value="OPTIGA_ACTIVE_MODE"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[2].pin[0]">
+                    <Alias value="AUTH_SDA"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[2].pin[1]">
+                    <Alias value="AUTH_SCL"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[3].pin[0]">
+                    <Alias value="HPI_I2C_SDA"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[3].pin[1]">
+                    <Alias value="HPI_I2C_SCL"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[3].pin[3]">
+                    <Alias value="DEBUG_PIN"/>
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
+                        <Param id="initialState" value="0"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[3].pin[4]">
+                    <Personality template="m0s8pin" version="1.0">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="sioInputBuffer" value="true"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="sioOutputBuffer" value="false"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioTrip" value=""/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="inFlash" value="true"/>
+                        <Param id="portLevelConfig" value="false"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[0]">
+                    <Alias value="USBPD_VBTR_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="2000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[1]">
+                    <Alias value="USBPD_IBTR_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="2000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[2]">
+                    <Alias value="INV_PWM_CLK"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value=""/>
+                        <Param id="intDivider" value=""/>
+                        <Param id="fracDivider" value=""/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[3]">
+                    <Alias value="FSK_EDGE_CLK"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value="48000000.000000"/>
+                        <Param id="intDivider" value="48"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[4]">
+                    <Alias value="HPI_I2C_CLK"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value="48000000.000000"/>
+                        <Param id="intDivider" value="4"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[5]">
+                    <Alias value="AUTH_I2C_CLK"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value="48000000.000000"/>
+                        <Param id="intDivider" value="5"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16_5[0]">
+                    <Alias value="BMC_RX_SPI_CLK"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="256000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16_5[1]">
+                    <Alias value="AUTH_FREE_COUNTER"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="1000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[0]">
+                    <Alias value="USBPD_TX_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="600000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[1]">
+                    <Alias value="USBPD_RX_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="12000000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[2]">
+                    <Alias value="USBPD_REFGEN_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value="24000000.000000"/>
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[3]">
+                    <Alias value="USBPD_FILT1_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="2000000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[4]">
+                    <Alias value="USBPD_BCH_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="1000000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[5]">
+                    <Alias value="USBPD_SAR_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="1000000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[6]">
+                    <Alias value="USBPD_BB_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="48000000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[7]">
+                    <Alias value="USBPD_BB_SOFT_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="auto"/>
+                        <Param id="desFreq" value="1000000.000000"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[8]">
+                    <Alias value="UART_SCB_DIV"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value="16000000.000000"/>
+                        <Param id="intDivider" value="3"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[9]">
+                    <Alias value="FREE_RUN_CLK"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value=""/>
+                        <Param id="intDivider" value=""/>
+                        <Param id="fracDivider" value=""/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="scb[0]">
+                    <Alias value="I2C_AUTH"/>
+                    <Personality template="m0s8i2c" version="1.0">
+                        <Param id="ModeUser" value="CY_SCB_I2C_MASTER"/>
+                        <Param id="EnableWakeup" value="false"/>
+                        <Param id="CallbackDS" value="false"/>
+                        <Param id="CallbackDSName" value="DsClockConfigCallback"/>
+                        <Param id="ManualDataRateCtrl" value="false"/>
+                        <Param id="ManualDigitalFilter" value="true"/>
+                        <Param id="ManualLowPhaseDutyCycle" value="16"/>
+                        <Param id="ManualHighPhaseDutyCycle" value="9"/>
+                        <Param id="DataRate" value="400"/>
+                        <Param id="EnableTxFifo" value="true"/>
+                        <Param id="AcceptAddress" value="false"/>
+                        <Param id="RxAddressFifoDelay" value="6"/>
+                        <Param id="EnableRxFifo" value="true"/>
+                        <Param id="SlaveAddress" value="16"/>
+                        <Param id="SlaveAddressMask" value="254"/>
+                        <Param id="AcceptGeneralCall" value="false"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="scb[1]">
+                    <Alias value="UART"/>
+                    <Personality template="m0s8uart" version="1.0">
+                        <Param id="ComMode" value="CY_SCB_UART_STANDARD"/>
+                        <Param id="EnableLinMode" value="false"/>
+                        <Param id="IrdaLowPower" value="false"/>
+                        <Param id="BaudRate" value="1000000"/>
+                        <Param id="Oversample" value="16"/>
+                        <Param id="BitsOrder" value="CY_SCB_UART_LSB_FIRST"/>
+                        <Param id="DataWidth" value="8"/>
+                        <Param id="ParityType" value="CY_SCB_UART_PARITY_NONE"/>
+                        <Param id="StopBits" value="CY_SCB_UART_STOP_BITS_1"/>
+                        <Param id="EnableInputFilter" value="false"/>
+                        <Param id="FlowControl" value="false"/>
+                        <Param id="CtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
+                        <Param id="RtsPolarity" value="CY_SCB_UART_ACTIVE_LOW"/>
+                        <Param id="RtsTriggerLevel" value="7"/>
+                        <Param id="RxTriggerLevel" value="7"/>
+                        <Param id="TxTriggerLevel" value="0"/>
+                        <Param id="MultiProc" value="false"/>
+                        <Param id="MpRxAddress" value="0"/>
+                        <Param id="MpRxAddressMask" value="255"/>
+                        <Param id="MpRxAcceptAddress" value="false"/>
+                        <Param id="DropOnFrameErr" value="false"/>
+                        <Param id="DropOnParityErr" value="false"/>
+                        <Param id="BreakSignalBits" value="11"/>
+                        <Param id="SmCardRetryOnNack" value="false"/>
+                        <Param id="IrdaPolarity" value="NON_INVERTING"/>
+                        <Param id="inFlash" value="true"/>
+                        <Param id="ApiMode" value="HIGH_LEVEL"/>
+                        <Param id="IntrRxNotEmpty" value="false"/>
+                        <Param id="IntrRxFull" value="false"/>
+                        <Param id="IntrRxOverflow" value="false"/>
+                        <Param id="IntrRxUnderflow" value="false"/>
+                        <Param id="IntrRxFrameErr" value="false"/>
+                        <Param id="IntrRxParityErr" value="false"/>
+                        <Param id="IntrRxBreakDetected" value="false"/>
+                        <Param id="IntrRxTrigger" value="false"/>
+                        <Param id="IntrTxUartDone" value="false"/>
+                        <Param id="IntrTxUartLostArb" value="false"/>
+                        <Param id="IntrTxUartNack" value="false"/>
+                        <Param id="IntrTxEmpty" value="false"/>
+                        <Param id="IntrTxNotFull" value="false"/>
+                        <Param id="IntrTxOverflow" value="false"/>
+                        <Param id="IntrTxUnderflow" value="false"/>
+                        <Param id="IntrTxTrigger" value="false"/>
+                    </Personality>
+                </Block>
+                <Block location="scb[3]">
+                    <Alias value="I2C_HPI"/>
+                    <Personality template="m0s8i2c" version="1.0">
+                        <Param id="ModeUser" value="CY_SCB_I2C_SLAVE"/>
+                        <Param id="EnableWakeup" value="false"/>
+                        <Param id="CallbackDS" value="false"/>
+                        <Param id="CallbackDSName" value="DsClockConfigCallback"/>
+                        <Param id="ManualDataRateCtrl" value="false"/>
+                        <Param id="ManualDigitalFilter" value="true"/>
+                        <Param id="ManualLowPhaseDutyCycle" value="16"/>
+                        <Param id="ManualHighPhaseDutyCycle" value="9"/>
+                        <Param id="DataRate" value="400"/>
+                        <Param id="EnableTxFifo" value="true"/>
+                        <Param id="AcceptAddress" value="false"/>
+                        <Param id="RxAddressFifoDelay" value="6"/>
+                        <Param id="EnableRxFifo" value="true"/>
+                        <Param id="SlaveAddress" value="16"/>
+                        <Param id="SlaveAddressMask" value="254"/>
+                        <Param id="AcceptGeneralCall" value="false"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0]">
+                    <Personality template="m0s8sysclocks" version="1.0"/>
+                </Block>
+                <Block location="srss[0].clock[0].ext[0]">
+                    <Personality template="m0s8extclk" version="1.0">
+                        <Param id="extFrequency" value="48.000"/>
+                        <Param id="accuracyPpm" value="0"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].hfclk[0]">
+                    <Personality template="m0s8hfclk" version="2.0">
+                        <Param id="sourceClock" value="IMO"/>
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].ilo[0]">
+                    <Personality template="m0s8ilo" version="1.0"/>
+                </Block>
+                <Block location="srss[0].clock[0].imo[0]">
+                    <Personality template="m0s8imo" version="1.0">
+                        <Param id="frequency" value="48000000"/>
+                        <Param id="trim" value="2"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].lfclk[0]">
+                    <Personality template="m0s8lfclk" version="1.0"/>
+                </Block>
+                <Block location="srss[0].clock[0].sysclk[0]">
+                    <Personality template="m0s8sysclk" version="1.0">
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].wdt[0]">
+                    <Alias value="WDT"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[0]">
+                    <Alias value="FSK_EDGE_COUNTER"/>
+                    <Personality template="m0s8counter" version="1.0">
+                        <Param id="ClockPrescaler" value="CY_TCPWM_COUNTER_PRESCALER_DIVBY_1"/>
+                        <Param id="RunMode" value="CY_TCPWM_COUNTER_CONTINUOUS"/>
+                        <Param id="CountDirection" value="CY_TCPWM_COUNTER_COUNT_UP"/>
+                        <Param id="Period" value="32768"/>
+                        <Param id="CompareOrCapture" value="CY_TCPWM_COUNTER_MODE_CAPTURE"/>
+                        <Param id="EnableCompareSwap" value="false"/>
+                        <Param id="Compare0" value="16384"/>
+                        <Param id="Compare1" value="16384"/>
+                        <Param id="CaptureInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="InterruptSource" value="CY_TCPWM_INT_ON_TC"/>
+                        <Param id="CountInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="StopInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="ReloadInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="StartInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="tcpwm[0].cnt[1]">
+                    <Alias value="INV_PWM"/>
+                    <Personality template="m0s8pwm" version="1.0">
+                        <Param id="PwmMode" value="CY_TCPWM_PWM_MODE_PWM"/>
+                        <Param id="ClockPrescaler" value="CY_TCPWM_PWM_PRESCALER_DIVBY_1"/>
+                        <Param id="PwmAlignment" value="CY_TCPWM_PWM_LEFT_ALIGN"/>
+                        <Param id="RunMode" value="CY_TCPWM_PWM_CONTINUOUS"/>
+                        <Param id="DeadClocks" value="0"/>
+                        <Param id="EnablePeriodSwap" value="true"/>
+                        <Param id="Period0" value="384"/>
+                        <Param id="Period1" value="384"/>
+                        <Param id="EnableCompareSwap" value="true"/>
+                        <Param id="Compare0" value="192"/>
+                        <Param id="Compare1" value="192"/>
+                        <Param id="InterruptSource" value="CY_TCPWM_INT_NONE"/>
+                        <Param id="CountInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="KillInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="ReloadInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="StartInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="SwapInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="KillMode" value="CY_TCPWM_PWM_STOP_ON_KILL"/>
+                        <Param id="InvertPwm" value="false"/>
+                        <Param id="InvertPwm_n" value="false"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="tcpwm[0].cnt[2]">
+                    <Alias value="FREE_RUN_COUNTER"/>
+                    <Personality template="m0s8counter" version="1.0">
+                        <Param id="ClockPrescaler" value="CY_TCPWM_COUNTER_PRESCALER_DIVBY_1"/>
+                        <Param id="RunMode" value="CY_TCPWM_COUNTER_CONTINUOUS"/>
+                        <Param id="CountDirection" value="CY_TCPWM_COUNTER_COUNT_UP"/>
+                        <Param id="Period" value="65535"/>
+                        <Param id="CompareOrCapture" value="CY_TCPWM_COUNTER_MODE_COMPARE"/>
+                        <Param id="EnableCompareSwap" value="false"/>
+                        <Param id="Compare0" value="65535"/>
+                        <Param id="Compare1" value="16384"/>
+                        <Param id="CaptureInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="InterruptSource" value="CY_TCPWM_INT_NONE"/>
+                        <Param id="CountInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="StopInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="ReloadInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="StartInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="tcpwm[0].cnt[3]">
+                    <Alias value="COUNTER_AUTHENTICATION"/>
+                    <Personality template="m0s8counter" version="1.0">
+                        <Param id="ClockPrescaler" value="CY_TCPWM_COUNTER_PRESCALER_DIVBY_1"/>
+                        <Param id="RunMode" value="CY_TCPWM_COUNTER_CONTINUOUS"/>
+                        <Param id="CountDirection" value="CY_TCPWM_COUNTER_COUNT_UP"/>
+                        <Param id="Period" value="65535"/>
+                        <Param id="CompareOrCapture" value="CY_TCPWM_COUNTER_MODE_COMPARE"/>
+                        <Param id="EnableCompareSwap" value="false"/>
+                        <Param id="Compare0" value="65535"/>
+                        <Param id="Compare1" value="16384"/>
+                        <Param id="CaptureInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="InterruptSource" value="CY_TCPWM_INT_NONE"/>
+                        <Param id="CountInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="StopInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="ReloadInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="StartInput" value="CY_TCPWM_INPUT_DISABLED"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="usbpd[0]">
+                    <Alias value="PD_PORT0"/>
+                    <Personality template="m0s8usbpd" version="1.0">
+                        <Param id="VbusOvp" value="false"/>
+                        <Param id="OvpMode" value="2"/>
+                        <Param id="OvpThresh" value="20"/>
+                        <Param id="OvpDebounce" value="10"/>
+                        <Param id="OvpRetry" value="2"/>
+                        <Param id="VbusUvp" value="false"/>
+                        <Param id="UvpMode" value="2"/>
+                        <Param id="UvpThresh" value="70"/>
+                        <Param id="UvpDebounce" value="10"/>
+                        <Param id="UvpRetry" value="2"/>
+                        <Param id="VbusOcp" value="false"/>
+                        <Param id="OcpMode" value="2"/>
+                        <Param id="OcpThresh" value="20"/>
+                        <Param id="OcpDebounce" value="10"/>
+                        <Param id="OcpRetry" value="2"/>
+                        <Param id="OcpSenseRes" value="5"/>
+                        <Param id="VbusScp" value="false"/>
+                        <Param id="ScpMode" value="2"/>
+                        <Param id="ScpThresh" value="6"/>
+                        <Param id="ScpDebounce" value="10"/>
+                        <Param id="ScpRetry" value="2"/>
+                        <Param id="ScpSenseRes" value="5"/>
+                        <Param id="VbusRcp" value="false"/>
+                        <Param id="RcpRetry" value="2"/>
+                        <Param id="VconnOcp" value="false"/>
+                        <Param id="VconnOcpDebounce" value="10"/>
+                        <Param id="VconnOcpRetry" value="2"/>
+                        <Param id="CcOvp" value="false"/>
+                        <Param id="CcOvpRetry" value="2"/>
+                        <Param id="SbuOvp" value="false"/>
+                        <Param id="SbuOvpRetry" value="2"/>
+                        <Param id="Bch" value="false"/>
+                        <Param id="BCenable" value="1"/>
+                        <Param id="Appleenable" value="2"/>
+                        <Param id="QCenable" value="4"/>
+                        <Param id="AFCCenable" value="8"/>
+                        <Param id="AppleSrcId" value="4"/>
+                        <Param id="QcSrc" value="4"/>
+                        <Param id="CableResistance" value="0"/>
+                        <Param id="inFlash" value="false"/>
+                    </Personality>
+                </Block>
+                <Block location="usbpd[1]">
+                    <Alias value="PD_PORT1"/>
+                    <Personality template="m0s8usbpd" version="1.0">
+                        <Param id="VbusOvp" value="false"/>
+                        <Param id="OvpMode" value="2"/>
+                        <Param id="OvpThresh" value="20"/>
+                        <Param id="OvpDebounce" value="10"/>
+                        <Param id="OvpRetry" value="2"/>
+                        <Param id="VbusUvp" value="false"/>
+                        <Param id="UvpMode" value="2"/>
+                        <Param id="UvpThresh" value="20"/>
+                        <Param id="UvpDebounce" value="10"/>
+                        <Param id="UvpRetry" value="2"/>
+                        <Param id="VbusOcp" value="false"/>
+                        <Param id="OcpMode" value="2"/>
+                        <Param id="OcpThresh" value="20"/>
+                        <Param id="OcpDebounce" value="10"/>
+                        <Param id="OcpRetry" value="2"/>
+                        <Param id="OcpSenseRes" value="10"/>
+                        <Param id="VbusScp" value="false"/>
+                        <Param id="ScpMode" value="2"/>
+                        <Param id="ScpThresh" value="6"/>
+                        <Param id="ScpDebounce" value="10"/>
+                        <Param id="ScpRetry" value="2"/>
+                        <Param id="ScpSenseRes" value="10"/>
+                        <Param id="VbusRcp" value="false"/>
+                        <Param id="RcpRetry" value="2"/>
+                        <Param id="VconnOcp" value="false"/>
+                        <Param id="VconnOcpDebounce" value="10"/>
+                        <Param id="VconnOcpRetry" value="2"/>
+                        <Param id="CcOvp" value="false"/>
+                        <Param id="CcOvpRetry" value="2"/>
+                        <Param id="SbuOvp" value="false"/>
+                        <Param id="SbuOvpRetry" value="2"/>
+                        <Param id="Bch" value="false"/>
+                        <Param id="BCenable" value="1"/>
+                        <Param id="Appleenable" value="2"/>
+                        <Param id="QCenable" value="4"/>
+                        <Param id="AFCCenable" value="8"/>
+                        <Param id="AppleSrcId" value="1"/>
+                        <Param id="QcSrc" value="1"/>
+                        <Param id="CableResistance" value="0"/>
+                        <Param id="inFlash" value="false"/>
+                    </Personality>
+                </Block>
+            </BlockConfig>
+            <Netlist>
+                <Net>
+                    <Port name="ioss[0].port[0].pin[4].digital_out[0]"/>
+                    <Port name="tcpwm[0].cnt[1].line[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[1].pin[4].digital_inout[0]"/>
+                    <Port name="scb[1].uart_tx[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[2].pin[0].digital_inout[0]"/>
+                    <Port name="scb[0].i2c_sda[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[2].pin[1].digital_inout[0]"/>
+                    <Port name="scb[0].i2c_scl[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[3].pin[0].digital_inout[0]"/>
+                    <Port name="scb[3].i2c_sda[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[3].pin[1].digital_inout[0]"/>
+                    <Port name="scb[3].i2c_scl[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[3].pin[4].digital_inout[0]"/>
+                    <Port name="srss[0].clock[0].ext[0].ext_clk[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_16[2].clk[0]"/>
+                    <Port name="tcpwm[0].cnt[1].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_16[3].clk[0]"/>
+                    <Port name="tcpwm[0].cnt[0].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_16[4].clk[0]"/>
+                    <Port name="scb[3].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_16[5].clk[0]"/>
+                    <Port name="scb[0].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_16_5[1].clk[0]"/>
+                    <Port name="tcpwm[0].cnt[3].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[2].clk[0]"/>
+                    <Port name="usbpd[0].clock_refgen[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[8].clk[0]"/>
+                    <Port name="scb[1].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[9].clk[0]"/>
+                    <Port name="tcpwm[0].cnt[2].clock[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_16[0].clk[0]"/>
+                    <Port name="usbpd[0].clock_vbtr[0]"/>
+                    <Port name="usbpd[1].clock_vbtr[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_16[1].clk[0]"/>
+                    <Port name="usbpd[0].clock_ibtr[0]"/>
+                    <Port name="usbpd[1].clock_ibtr[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[0].clk[0]"/>
+                    <Port name="usbpd[0].clock_tx[0]"/>
+                    <Port name="usbpd[1].clock_tx[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[1].clk[0]"/>
+                    <Port name="usbpd[0].clock_rx[0]"/>
+                    <Port name="usbpd[1].clock_rx[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[3].clk[0]"/>
+                    <Port name="usbpd[0].clock_filter1[0]"/>
+                    <Port name="usbpd[1].clock_filter1[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[4].clk[0]"/>
+                    <Port name="usbpd[0].clock_bch_det[0]"/>
+                    <Port name="usbpd[1].clock_bch_det[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[5].clk[0]"/>
+                    <Port name="usbpd[0].clock_sar[0]"/>
+                    <Port name="usbpd[1].clock_sar[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[6].clk[0]"/>
+                    <Port name="usbpd[0].clock_bb[0]"/>
+                    <Port name="usbpd[1].clock_bb[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[7].clk[0]"/>
+                    <Port name="usbpd[0].clock_bb_soft[0]"/>
+                    <Port name="usbpd[1].clock_bb_soft[0]"/>
+                </Net>
+            </Netlist>
+        </Device>
+    </Devices>
+    <ConfiguratorData/>
+</Design>
