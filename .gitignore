@@ -81,8 +81,6 @@ Backup*
 
 # Compiled Binaries
 *.bin
-*.elf
-*.hex
 *.map
 
 # Trash files
